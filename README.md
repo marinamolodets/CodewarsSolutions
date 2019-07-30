@@ -29,3 +29,86 @@ function basicOp(operation, value1, value2) {
     }
 }
 ```
+https://www.codewars.com/kata/5583090cbe83f4fd8c000051
+```javascript
+function digitize(n) {
+  let arr = [];
+  do{
+    arr.push(n % 10);
+    n  = Math.floor(n / 10); 
+  } while (n !== 0);
+  return arr;  
+}
+```
+https://www.codewars.com/kata/5761a717780f8950ce001473
+```javascript
+function calculateAge(num1, num2) {
+  let a = num2 - num1;
+  if (a == -1) {
+    return 'You will be born in 1 year.';
+  }
+  if (a < -1) {
+    return `You will be born in ${Math.abs(a)} years.`;
+  }
+  if (a == 1) {
+    return 'You are 1 year old.';
+  }
+  if (a > 1) {
+    return `You are ${a} years old.`;
+  }
+  return 'You were born this very year!';
+  
+//   if( num1 > num2 ){
+//     let a = num1 - num2;
+//     if (a == 1) {
+//       return 'You will be born in 1 year.';
+//     }
+//     return `You will be born in ${a} years.`;
+//   }
+//   if( num1 < num2 ){
+//     let a = num2 - num1;
+//     if (a == 1) {
+//       return 'You are 1 year old.';
+//     }
+//     return `You are ${a} years old.`;
+//   }
+//   return 'You were born this very year!';
+}
+```
+https://www.codewars.com/kata/5808dcb8f0ed42ae34000031
+```javascript
+function switchItUp(number) {
+switch (number) {
+  case 0:
+    return( 'Zero' );
+    break;
+  case 1:
+    return( 'One' );
+    break;
+  case 2:
+    return( 'Two' );
+    break;
+  case 3:
+    return( 'Three' );
+    break;
+  case 4:
+    return( 'Four' );
+    break;
+  case 5:
+    return('Five' );
+    break;
+  case 6:
+    return( 'Six' );
+    break;
+  case 7:
+    return( 'Seven' );
+    break;
+  case 8:
+    return( 'Eight' );
+    break;
+  case 9:
+    return( 'Nine' );
+    break;
+  }
+}
+```
