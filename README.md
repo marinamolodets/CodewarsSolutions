@@ -112,3 +112,30 @@ switch (number) {
   }
 }
 ```
+https://www.codewars.com/kata/576b93db1129fcf2200001e6
+```javaScript
+function sumArray(array) {
+  if( array == null || array == undefined  || array == [] || array.length == 1 ) {
+    return 0;
+  }
+  let sum = 0;
+  let max = array[0];
+  let min = array[0];
+  for( let i = 0; i < array.length; i ++ ) {
+    sum += array[i];
+    if (array[i] > max) {
+      max = array[i];
+    }
+    if (array[i] < min) {
+      min = array[i];
+    }
+  }
+  sum -= max + min; 
+  if(Number.isNaN(sum)) {
+  return 0;
+  }
+  return sum;
+}
+    
+  
+```
