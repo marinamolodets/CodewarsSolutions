@@ -138,4 +138,21 @@ function sumArray(array) {
 }
     
   
+``` 
+   https://www.codewars.com/kata/58ba6fece3614ba7c200017f
+   
+
+```javaScript
+function palindrome(num) { 
+  if (typeof(num) !=='number' || num < 0) {
+    return "Not valid";
+  }
+  let str = '' + num;
+  for (let i = 0; i < Math.floor(str.length / 2); i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}  
 ```
