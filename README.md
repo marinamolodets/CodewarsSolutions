@@ -156,3 +156,34 @@ function palindrome(num) {
   return true;
 }  
 ```
+https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5
+```javascript
+function reverseNumber(n) {
+  if (n >= 0) {
+    let arr = n.toString().split('').reverse();
+    return +(arr.join(''));
+  } else {
+    n = n * (-1);
+    let arr = n.toString().split('').reverse();
+    return (-1) * (+(arr.join('')));
+  }
+} 
+```
+https://www.codewars.com/kata/58712dfa5c538b6fc7000569
+```javascript
+function countRedBeads(n) {
+  if (n < 2) {
+    return 0; 
+  }
+  return (n - 1) * 2;
+}
+```
+https://www.codewars.com/kata/5aca48db188ab3558e0030fa
+```javascript
+function calcType(a, b, res) {
+  if (res === a * b) return "multiplication";
+  if (res === a / b) return "division";
+  if (res === a + b) return "addition";
+  if (res === a - b) return "subtraction";
+}
+```
