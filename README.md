@@ -187,3 +187,28 @@ function calcType(a, b, res) {
   if (res === a - b) return "subtraction";
 }
 ```
+https://www.codewars.com/kata/56747fd5cb988479af000028
+```javacript
+function getMiddle(s) {
+  for (let i = 0; i <= s.length/2; i++) {
+    if (s.length % 2 === 0) {
+    return s[s.length/2-1] + s[s.length/2];
+    } else {
+    return s[Math.floor(s.length/2)];
+    }
+  }
+}
+
+```
+https://www.codewars.com/kata/54ff3102c1bad923760001f3
+``` javascript
+  function getCount(str) {
+    let vowelsCount = 0;
+    for(i = 0; i < str.length; i++) { 
+      if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+      vowelsCount ++;
+      }
+    }
+  return vowelsCount;
+  }
+  
