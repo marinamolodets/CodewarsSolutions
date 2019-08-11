@@ -260,3 +260,57 @@ https://www.codewars.com/kata/57073869924f34185100036d
      return xNew;
    }
  ```
+ https://www.codewars.com/kata/5aa736a455f906981800360d
+ ```javascript
+    function feast(beast, dish) {
+      if (beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1]) {
+      return true;
+      } 
+      return false;
+    }
+ ```
+ https://www.codewars.com/kata/59d9ff9f7905dfeed50000b0
+ ```javascript
+    function solve(arr){  
+      let alp = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      let arr1 = [];
+      for (let i = 0; i < arr.length; i++) {
+        let count = 0;
+        for (let j = 0; j < arr[i].length; j++) {
+          if ( j === alp.indexOf(arr[i][j].toUpperCase()) ) {
+            count++;
+          }
+        }
+        arr1.push(count);
+      }
+      return arr1;
+    }
+ ```
+ https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+ ```javascript
+    function noSpace(x){
+      let str = x.replace(/ /gi, '');
+      return str;
+    }
+ ```
+ ```javascript
+    function noSpace(x){
+    return x.replace(/\s/g, "")
+    }
+ ```
+ https://www.codewars.com/kata/55a70521798b14d4750000a4
+ ```javascript
+    function greet(name){
+      return `Hello, ${name} how are you doing today?`;
+    }
+ ```
+ https://www.codewars.com/kata/string-ends-with/train/javascript/5d4bc3487a52805e514b12ed
+```javascript
+    function solution(str, ending){
+      if (str.slice(str.length - ending.length) === ending) {
+      return true;
+      } else {
+      return false;
+      }
+    }
+```
