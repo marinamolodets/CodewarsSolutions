@@ -211,4 +211,52 @@ https://www.codewars.com/kata/54ff3102c1bad923760001f3
     }
   return vowelsCount;
   }
-  
+```
+https://www.codewars.com/kata/52774a314c2333f0a7000688
+```javascript
+function validParentheses(str){
+  const stack = [],  open = ['(', '{', '['],  close = [')', '}', ']'];
+  for(let i = 0; i < str.length; i++){
+    if(open.includes(str[i])) {
+      stack.push(str[i]);
+    } else {
+      if(close.indexOf(str[i]) === open.indexOf( stack[stack.length - 1])) {
+        stack.pop();
+      } else {
+        return false;
+      }
+    }
+   }
+    return stack.length === 0;
+}
+```
+https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789
+```javascript 
+    const avg = a => a.reduce((a,b) => a + b) / a.length;
+```
+https://www.codewars.com/kata/56747fd5cb988479af000028
+```javascript
+    function getMiddle(s) {
+      for (let i = 0; i <= s.length/2; i++) {
+        if (s.length % 2 === 0) {
+        return s[s.length/2-1] + s[s.length/2];
+        } else {
+        return s[Math.floor(s.length/2)];
+        }
+      }
+    }
+```
+https://www.codewars.com/kata/57073869924f34185100036d
+```javascript
+   function randomCase(x) {
+     let xNew = '';
+       for (let i = 0; i < x.length; i++) {
+         if(Math.round(Math.random()) > 0) {
+         xNew += x[i].toUpperCase();
+         } else {
+         xNew += x[i].toLowerCase();
+         }
+       } 
+     return xNew;
+   }
+ ```
