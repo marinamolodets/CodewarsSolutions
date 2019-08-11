@@ -314,3 +314,87 @@ https://www.codewars.com/kata/57073869924f34185100036d
       }
     }
 ```
+```javascript
+    function solution(str, ending){
+      if (str.slice(str.length - ending.length) === ending) {
+      return true;
+      } else {
+      return false;
+      }
+    }
+```
+https://www.codewars.com/kata/5982619d2671576e90000017
+```javascript
+   function spongeMeme(s) {
+     let newStr = '';
+     for (let i = 0; i < s.length; i++) {
+       if (i % 2 == 0) {
+       newStr += s[i].toUpperCase();
+       } else {
+       newStr += s[i].toLowerCase();
+       }
+     }
+     return newStr;
+   }
+```
+https://www.codewars.com/kata/56f6ad906b88de513f000d96
+```javascript
+   function bonusTime(salary, bonus) {
+     let superSalary = salary * 10;
+     if (bonus === true) {
+     return "£" + superSalary;
+     } else {
+     return "£" + salary;
+     }
+   }
+```
+https://www.codewars.com/kata/51e704f2d8dbace389000279
+```javascript
+   function arraysSimilar(arr1, arr2) {
+     return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+   }
+```
+```javascript
+   function arraysSimilar(arr1, arr2) {
+     if(arr1.length !== arr2.length) return false;
+     
+     arr1.sort();
+     arr2.sort();
+     
+     for (let i = 0; i < arr1.length; i++) {
+       if (arr1[i] !== arr2[i]) return false; 
+     }
+     return true;
+   }
+```
+https://www.codewars.com/kata/5594463eaf1701909c0000d4
+```javascript
+    function arraySum(arr) {
+      const b = arr.toString().split(',');
+      let sum = 0;
+      
+      for (let i = 0; i < b.length; i++) {
+        sum += Number.isNaN(Number(b[i]))? 0 : Number((b[i]));
+      }
+      return sum;
+    }
+```
+https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
+```javascript
+   function distinct(a) {
+     return [...new Set(a)];
+   }
+```
+```javascript
+   function distinct(a) {
+     const items = {};
+     const res = [];
+     for (let i = 0; i < a.length; i++){
+       if (!items[a[i]]) {
+       res.push(a[i]);
+       items[a[i]] = true;
+       }
+     }
+     return res;
+   }
+```
